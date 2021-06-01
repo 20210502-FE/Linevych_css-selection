@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html, body { 
+    height: 100%;
+}
+
 body {
     font-family: Trebuchet, sans-serif;
     font-weight: 400;
@@ -15,7 +19,10 @@ body {
 
 a {
     text-decoration: none;
-    
+}
+
+ul {
+    list-style: none;
 }
 
 .header {
@@ -28,7 +35,7 @@ a {
     padding: 30px 0 15px;
 }
 
-.header__text{
+.header__text {
     padding-bottom: 20px;
 }
 
@@ -36,14 +43,14 @@ a {
     margin-bottom: 40px;
 }
 
-.content__form {
+.content__list {
     width: 65%;
     margin: 30px auto;
     text-align: left;
     max-height: 370px;
 }
 
-.content__list {
+.content__list-item {
     color: #fff;
     background-color: #88839E;
     height: 62px;
@@ -55,21 +62,21 @@ a {
     background-color: #817ba1;
 }
 
-.content__list-info {
+.content__list-text_small {
     color: #C9C2C5;
     font-size: 14px;
     padding-left: 22px;
 }
 
-.content__list-info::before {
+.content__list-text_small::before {
     content: "(";
 }
 
-.content__list-info::after {
+.content__list-text_small::after {
     content: ")";
 }
 
-.content__list:hover {
+.content__list-item:hover {
     background: #625E77;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
@@ -88,13 +95,13 @@ label {
     cursor: pointer;
 }
 
-.button {
+.content__btn {
     margin: 30px auto;
     text-align: center;
     width: 65%;
 }
 
-.button__text {
+.content__btn-link {
     display: block;
     padding: 15px 0;
     background-color: #4A4F56;
@@ -102,11 +109,11 @@ label {
     transition: all .5s;
 }
 
-.button__text:hover {
+.content__btn-link:hover {
     background-color: #616161;
     color: #607D8B;
 }
 
-.button__text::after {
+.content__btn-link::after {
     content: ":)";
 }
